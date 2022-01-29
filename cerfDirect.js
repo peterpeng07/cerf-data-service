@@ -9,12 +9,3 @@ const db = pgp({
     // For SSL, see: https://stackoverflow.com/questions/22301722/ssl-for-postgresql-connection-nodejs
     ssl: true,
 });
-
-// Send the SQL command directly to Postgres.
-// db.many("SELECT * FROM Player")
-//     .then(function (data) {
-//         console.log(data);
-//     })
-//     .catch(function (error) {
-//         console.log('ERROR:', error)
-//     });
