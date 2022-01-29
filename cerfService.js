@@ -39,7 +39,7 @@ function returnDataOr404(res, data) {
     }
 }
 
-function readHelloMessage(req, res) {
+function readHelloMessage(req, res, next) {
     db.many("SELECT * FROM Log")
         .then(data => {
             res.send(data);
